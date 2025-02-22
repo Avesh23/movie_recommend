@@ -18,7 +18,8 @@ def recommend(movie):
 
     return recommended_movies
 
-movies_dict = pickle.load(open('C:/Users/ADMIN/PycharmProjects/Movie-recommender-System/movie_dict.pkl','rb'))
+# movies_dict = pickle.load(open('C:/Users/ADMIN/PycharmProjects/Movie-recommender-System/movie_dict.pkl','rb'))
+movies_dict = pickle.load(open('movie_dict.pkl', 'rb'))
 movies = pd.DataFrame(movies_dict)
 
 similarity = pickle.load(open('C:/Users/ADMIN/PycharmProjects/Movie-recommender-System/similarity.pkl','rb'))
